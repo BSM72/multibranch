@@ -38,7 +38,7 @@ pipeline {
      stage('Code checkout')
         {
             steps{
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/BSM72/Multibranchone.git']])
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/BSM72/multibranch.git']])
                 echo 'Checking Out Code'
             }
         }
@@ -53,7 +53,7 @@ pipeline {
      stage('All Files Met')
         {
             steps{
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/BSM72/Multibranchone.git']])
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/BSM72/multibranch.git']])
                 echo 'All Files Met'
             }
         }

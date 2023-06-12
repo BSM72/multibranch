@@ -1,0 +1,11 @@
+.stripe-payment-section {
+  background-color: white;
+
+  height: 500px;
+  text-align: center;
+}
+
+.payment-template {
+  position: relative;
+  top: 100px;
+}

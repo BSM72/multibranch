@@ -1,0 +1,9 @@
+.contactUs-image {
+  position: absolute;
+  right: 200px;
+  top: 300px;
+}
+.contactUs-image img {
+  border-radius: 10px;
+  width: 600px;
+}

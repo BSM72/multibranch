@@ -1,0 +1,12 @@
+.logOutBtn {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 6px;
+  width: 120px;
+}
+
+.logOutBtn :hover {
+  border: 0px solid black;
+}

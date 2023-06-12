@@ -53,12 +53,13 @@ pipeline {
      stage('All Files Met')
         {
             steps{
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/BSM72/multibranch.git']])
+//                 checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/BSM72/multibranch.git']])
                 echo 'All Files Met'
             }
         }
       stage ('Changing Container Name'){
             steps{
+              echo '"Changing Container Name"'
 //                 sh returnStatus: true, script: 'docker stop $(docker ps -a | grep ${JOB_NAME} | awk \'{print $1}\')'
 //                 sh returnStatus: true, script: 'docker rmi $(docker images | grep ${registry} | awk \'{print $3}\') --force' //this will delete all images
 //                 sh returnStatus: true, script: 'docker rm ${JOB_NAME}'
